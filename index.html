@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="envelope">
+        <div class="card">
+            <div class="card-front">
+                <div class="heart"></div>
+                <h2>Tap to Open ❤️</h2>
+            </div>
+            <div class="card-inside">
+                <div class="content-wrapper">
+                    <div class="photo-album">
+                        <div class="photo-container">
+                            <img id="currentPhoto" src="images/photo1.jpg" alt="Our Memory">
+                            <div class="navigation">
+                                <button onclick="prevPhoto(event)">❮</button>
+                                <button onclick="nextPhoto(event)">❯</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-section">
+                        <h1>Happy Birthday!</h1>
+                        <div class="wishes" id="wishes">
+                            <p class="wish active">Wish #1: May your day be filled with joy and laughter!</p>
+                            <p class="wish">Wish #2: You make my world complete!</p>
+                            <p class="wish">Wish #3: Thank you for being in my life!</p>
+                            <p class="wish">Wish #4: You are my everything!</p>
+                            <p class="wish">Wish #5: I love you more each day!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
