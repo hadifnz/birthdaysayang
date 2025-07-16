@@ -365,13 +365,15 @@ h1 {
 
     .heart {
         width: 60px;
-        height: 60px;
+        height: 54px; /* Laraskan ketinggian */
+        margin-bottom: 30px;
     }
 
-    .heart::before,
-    .heart::after {
-        width: 60px;
-        height: 60px;
+    .heart:before,
+    .heart:after {
+        left: 30px;
+        width: 30px;
+        height: 48px; /* Laraskan ketinggian */
     }
 
     .heart::before {
