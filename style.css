@@ -78,6 +78,10 @@ body {
     transform: rotateY(180deg);
 }
 
+.card.open .card-front {
+    display: none;
+}
+
 .card-front, .card-inside {
     position: absolute;
     width: 100%;
