@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday My Love</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="envelope">
-        <div class="card" onclick="flipCard()">
+        <div class="card">
             <div class="card-front">
                 <div class="heart"></div>
                 <h2>Tap to Open ❤️</h2>
@@ -17,7 +17,7 @@
                 <div class="content-wrapper">
                     <div class="photo-album">
                         <div class="photo-container">
-                            <img id="currentPhoto" src="images/photo1.jpg" alt="Our Memory"/>
+                            <img id="currentPhoto" src="images/photo1.jpg" alt="Our Memory">
                             <div class="navigation">
                                 <button onclick="prevPhoto(event)">❮</button>
                                 <button onclick="nextPhoto(event)">❯</button>
@@ -38,42 +38,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        // Flip card on click
-        function flipCard() {
-            document.querySelector('.card').classList.toggle('open');
-        }
-
-        // Photo navigation
-        const photos = [
-            'images/photo1.jpg',
-            'images/photo2.jpg',
-            'images/photo3.jpg',
-            'images/photo4.jpg'
-        ];
-        let current = 0;
-
-        function nextPhoto(e) {
-            e.stopPropagation();
-            current = (current + 1) % photos.length;
-            document.getElementById('currentPhoto').src = photos[current];
-        }
-
-        function prevPhoto(e) {
-            e.stopPropagation();
-            current = (current - 1 + photos.length) % photos.length;
-            document.getElementById('currentPhoto').src = photos[current];
-        }
-
-        // Rotate birthday wishes
-        const wishes = document.querySelectorAll('.wish');
-        let wishIndex = 0;
-        setInterval(() => {
-            wishes[wishIndex].classList.remove('active');
-            wishIndex = (wishIndex + 1) % wishes.length;
-            wishes[wishIndex].classList.add('active');
-        }, 4000);
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
