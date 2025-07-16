@@ -353,6 +353,20 @@ h1 {
         height: 60px;
     }
 
+    .heart::before,
+    .heart::after {
+        width: 60px;
+        height: 60px;
+    }
+
+    .heart::before {
+        left: -30px;
+    }
+
+    .heart::after {
+        top: -30px;
+    }
+
     .card-front h2 {
         font-size: 20px;
         margin-top: 10px;
