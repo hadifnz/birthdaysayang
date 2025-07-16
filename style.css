@@ -376,12 +376,8 @@ h1 {
         height: 48px; /* Laraskan ketinggian */
     }
 
-    .heart::before {
-        left: -30px;
-    }
-
-    .heart::after {
-        top: -30px;
+    .heart:after {
+        left: 0; /* Tambah baris ini untuk membetulkan kedudukan */
     }
 
     .card-front h2 {
